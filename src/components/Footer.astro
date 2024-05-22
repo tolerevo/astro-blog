@@ -1,11 +1,16 @@
 ---
-const platform = "github";
-const username = "tolerevo";
-const xUserName = "dr_tole";
-const fUserName = "diego.tolentino.125"
+import Social from './Social.astro';
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
-  <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-  <p>¡Sigueme en mis redes sociales <a href={`https://www.x.com/${xUserName}`}>X</a> <a href={`https://www.facebook.com/${fUserName}`}>Facebook</a>!</p>
+  <Social platform="twitter" username="dr_tole" />
+  <Social platform="github" username="tolerevo" />
+  <Social platform="facebook" username="diego.tolentino.125" />
 </footer>
