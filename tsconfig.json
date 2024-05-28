@@ -1,7 +1,8 @@
 {
+  // Nota: No se necesitan cambios si se utiliza "astro/tsconfigs/strict" o "astro/tsconfigs/strictest"
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "strictNullChecks": true,
+    "allowJs": true
   }
 }
